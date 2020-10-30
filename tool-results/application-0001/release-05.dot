@@ -1,0 +1,35 @@
+strict digraph G {
+  clouddriver [ label="clouddriver" ];
+  echo [ label="echo" ];
+  fiat [ label="fiat" ];
+  front50 [ label="front50" ];
+  gate [ label="gate" ];
+  igor [ label="igor" ];
+  kayenta [ label="kayenta" ];
+  orca [ label="orca" ];
+  rosco [ label="rosco" ];
+  front50 -> fiat;
+  echo -> front50;
+  echo -> orca;
+  echo -> igor;
+  orca -> front50;
+  orca -> echo;
+  orca -> fiat;
+  orca -> rosco;
+  orca -> igor;
+  orca -> clouddriver;
+  fiat -> front50;
+  fiat -> clouddriver;
+  gate -> front50;
+  gate -> echo;
+  gate -> orca;
+  gate -> fiat;
+  gate -> rosco;
+  gate -> igor;
+  gate -> clouddriver;
+  gate -> kayenta;
+  igor -> echo;
+  igor -> clouddriver;
+  clouddriver -> fiat;
+  orca -> kayenta;
+}

@@ -1,0 +1,1320 @@
+{
+  "timestamp": 1602472430,
+  "duration": 600,
+  "graphType": "versionedApp",
+  "elements": {
+    "nodes": [
+      {
+        "data": {
+          "id": "441af6fbee77e495893024d72966ac95",
+          "nodeType": "app",
+          "namespace": "spinnaker",
+          "workload": "spin-clouddriver",
+          "app": "clouddriver",
+          "version": "1.13.12",
+          "destServices": [
+            {
+              "namespace": "spinnaker",
+              "name": "spin-clouddriver"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpIn": "0.63",
+                "httpIn4xx": "0.20",
+                "httpOut": "0.05"
+              }
+            },
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpOut": "322472.07"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "61949c8f3b174a291834ff7135729050",
+          "nodeType": "app",
+          "namespace": "spinnaker",
+          "workload": "spin-deck",
+          "app": "deck",
+          "version": "1.13.12",
+          "destServices": [
+            {
+              "namespace": "spinnaker",
+              "name": "spin-deck"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpIn": "0.002"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "681734c02ea1478615d7a657a5a68bed",
+          "nodeType": "app",
+          "namespace": "spinnaker",
+          "workload": "spin-echo",
+          "app": "echo",
+          "version": "1.13.12",
+          "destServices": [
+            {
+              "namespace": "spinnaker",
+              "name": "spin-echo"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpIn": "0.03",
+                "httpOut": "0.10"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "ff4f99bf92c3ac372e9abe541f2ac2d6",
+          "nodeType": "app",
+          "namespace": "spinnaker",
+          "workload": "spin-fiat",
+          "app": "fiat",
+          "version": "1.13.12",
+          "destServices": [
+            {
+              "namespace": "spinnaker",
+              "name": "spin-fiat"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpIn": "0.06",
+                "httpOut": "0.14"
+              }
+            },
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpOut": "231.18"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "da3c730f443d9b6dff1072e0707ef588",
+          "nodeType": "app",
+          "namespace": "spinnaker",
+          "workload": "spin-front50",
+          "app": "front50",
+          "version": "1.13.12",
+          "destServices": [
+            {
+              "namespace": "spinnaker",
+              "name": "spin-front50"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpIn": "0.47",
+                "httpOut": "0.007"
+              }
+            },
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpOut": "1483.08"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "b8512c9cdb9757a1af5558b7785ba679",
+          "nodeType": "app",
+          "namespace": "spinnaker",
+          "workload": "spin-gate",
+          "app": "gate",
+          "version": "1.13.12",
+          "destServices": [
+            {
+              "namespace": "spinnaker",
+              "name": "spin-gate"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpIn": "0.10",
+                "httpIn4xx": "0.007",
+                "httpOut": "0.54"
+              }
+            },
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpIn": "27.36",
+                "tcpOut": "1568.29"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "9afcfda32503d19a2baee57d4e14aab0",
+          "nodeType": "app",
+          "namespace": "spinnaker",
+          "workload": "spin-igor",
+          "app": "igor",
+          "version": "1.13.12",
+          "destServices": [
+            {
+              "namespace": "spinnaker",
+              "name": "spin-igor"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpOut": "0.10"
+              }
+            },
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpOut": "29.12"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "5bed29f681ec20f337dd2183b6d070c0",
+          "nodeType": "app",
+          "namespace": "spinnaker",
+          "workload": "spin-kayenta",
+          "app": "kayenta",
+          "version": "1.13.12",
+          "destServices": [
+            {
+              "namespace": "spinnaker",
+              "name": "spin-kayenta"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpIn": "0.005"
+              }
+            },
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpOut": "3358.60"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "303e2a9382b5b881cb38b7186a001296",
+          "nodeType": "app",
+          "namespace": "spinnaker",
+          "workload": "spin-orca",
+          "app": "orca",
+          "version": "1.13.12",
+          "destServices": [
+            {
+              "namespace": "spinnaker",
+              "name": "spin-orca"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpIn": "0.06",
+                "httpIn4xx": "0.003",
+                "httpOut": "0.31"
+              }
+            },
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpOut": "25506.70"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "67cc4ad635f8c1c1d3fb5d096c2887da",
+          "nodeType": "app",
+          "namespace": "spinnaker",
+          "workload": "spin-redis",
+          "app": "redis",
+          "version": "1.13.12",
+          "destServices": [
+            {
+              "namespace": "spinnaker",
+              "name": "spin-redis"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpIn": "78340.32"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "6e12196cc2a4951d3e9d72bd6ef7a7e7",
+          "nodeType": "app",
+          "namespace": "spinnaker",
+          "workload": "spin-rosco",
+          "app": "rosco",
+          "version": "1.13.12",
+          "destServices": [
+            {
+              "namespace": "spinnaker",
+              "name": "spin-rosco"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpOut": "1.11"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "d7c639544a7810a8d021b64538e4e435",
+          "nodeType": "service",
+          "namespace": "unknown",
+          "service": "PassthroughCluster",
+          "destServices": [
+            {
+              "namespace": "unknown",
+              "name": "PassthroughCluster"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpIn": "272410.74"
+              }
+            }
+          ],
+          "isInaccessible": true
+        }
+      },
+      {
+        "data": {
+          "id": "49cf51e18422421eed42c122d7d303f0",
+          "nodeType": "service",
+          "namespace": "unknown",
+          "service": "spin-redis.spinnaker.svc.cluster.local",
+          "destServices": [
+            {
+              "namespace": "unknown",
+              "name": "spin-redis.spinnaker.svc.cluster.local"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpIn": "82239.41"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "b30b0078325bf2e1adb4d57c4c0c2665",
+          "nodeType": "unknown",
+          "namespace": "unknown",
+          "workload": "unknown",
+          "app": "unknown",
+          "version": "latest",
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpOut": "0.10"
+              }
+            },
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpOut": "78367.68"
+              }
+            }
+          ],
+          "isInaccessible": true,
+          "isRoot": true
+        }
+      }
+    ],
+    "edges": [
+      {
+        "data": {
+          "id": "3c0dca55174c8dc671e2e5cb8f1c7afd",
+          "source": "303e2a9382b5b881cb38b7186a001296",
+          "target": "441af6fbee77e495893024d72966ac95",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.20",
+              "http4xx": "0.20",
+              "httpPercentErr": "99.0",
+              "httpPercentReq": "64.8"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "1.0"
+                },
+                "hosts": {
+                  "spin-clouddriver.spinnaker.svc.cluster.local": "1.0"
+                }
+              },
+              "404": {
+                "flags": {
+                  "-": "99.0"
+                },
+                "hosts": {
+                  "spin-clouddriver.spinnaker.svc.cluster.local": "99.0"
+                }
+              }
+            }
+          },
+          "responseTime": "975",
+          "isMTLS": "100"
+        }
+      },
+      {
+        "data": {
+          "id": "ced2a06f52e87403f12cfbca031a9ea6",
+          "source": "303e2a9382b5b881cb38b7186a001296",
+          "target": "49cf51e18422421eed42c122d7d303f0",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "25506.70"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "spin-redis.spinnaker.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dd8a5db0d03ffb4fd0c1cb7325608fda",
+          "source": "303e2a9382b5b881cb38b7186a001296",
+          "target": "681734c02ea1478615d7a657a5a68bed",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.02",
+              "httpPercentReq": "6.8"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "spin-echo.spinnaker.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          },
+          "responseTime": "42",
+          "isMTLS": "100"
+        }
+      },
+      {
+        "data": {
+          "id": "40fdc2a6fc2b0beaacc2e8720ac65c48",
+          "source": "303e2a9382b5b881cb38b7186a001296",
+          "target": "6e12196cc2a4951d3e9d72bd6ef7a7e7",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "8c033d2120b2bb14c9bdb95cd1c2913e",
+          "source": "303e2a9382b5b881cb38b7186a001296",
+          "target": "da3c730f443d9b6dff1072e0707ef588",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.08",
+              "httpPercentReq": "26.1"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "spin-front50.spinnaker.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          },
+          "responseTime": "71",
+          "isMTLS": "100"
+        }
+      },
+      {
+        "data": {
+          "id": "c26915833ffadd5ba51b039043b89ea7",
+          "source": "303e2a9382b5b881cb38b7186a001296",
+          "target": "ff4f99bf92c3ac372e9abe541f2ac2d6",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.007",
+              "httpPercentReq": "2.3"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "spin-fiat.spinnaker.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          },
+          "responseTime": "24",
+          "isMTLS": "100"
+        }
+      },
+      {
+        "data": {
+          "id": "3716fdbc5a4f6244540b839f98b42658",
+          "source": "441af6fbee77e495893024d72966ac95",
+          "target": "49cf51e18422421eed42c122d7d303f0",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "51830.55"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "spin-redis.spinnaker.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "5329eab22ae660b36a125366d7e973a3",
+          "source": "441af6fbee77e495893024d72966ac95",
+          "target": "d7c639544a7810a8d021b64538e4e435",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "270641.52"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "unknown": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "18c72bcb5feaebb0c04f85167fe18a4f",
+          "source": "441af6fbee77e495893024d72966ac95",
+          "target": "ff4f99bf92c3ac372e9abe541f2ac2d6",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.05",
+              "httpPercentReq": "100.0"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "spin-fiat.spinnaker.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          },
+          "responseTime": "23",
+          "isMTLS": "100"
+        }
+      },
+      {
+        "data": {
+          "id": "fe6802bb2def268ac1604eafd8516617",
+          "source": "5bed29f681ec20f337dd2183b6d070c0",
+          "target": "49cf51e18422421eed42c122d7d303f0",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "3094.39"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "spin-redis.spinnaker.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "817857e127d158c7ff8e02096b6b0def",
+          "source": "5bed29f681ec20f337dd2183b6d070c0",
+          "target": "d7c639544a7810a8d021b64538e4e435",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "264.21"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "unknown": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "8fac5ced574002a63d2d78d40075362a",
+          "source": "681734c02ea1478615d7a657a5a68bed",
+          "target": "303e2a9382b5b881cb38b7186a001296",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.002",
+              "httpPercentReq": "1.9"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "spin-orca.spinnaker.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          },
+          "responseTime": "49",
+          "isMTLS": "100"
+        }
+      },
+      {
+        "data": {
+          "id": "386a1d33efa88c4d40b2e2bf5990d67e",
+          "source": "681734c02ea1478615d7a657a5a68bed",
+          "target": "9afcfda32503d19a2baee57d4e14aab0",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "f02a16d52ab780eec68732ecdda74f89",
+          "source": "681734c02ea1478615d7a657a5a68bed",
+          "target": "d7c639544a7810a8d021b64538e4e435",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "74576642d1a60f04e0e1509639f1a105",
+          "source": "681734c02ea1478615d7a657a5a68bed",
+          "target": "da3c730f443d9b6dff1072e0707ef588",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.10",
+              "httpPercentReq": "98.1"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "spin-front50.spinnaker.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          },
+          "responseTime": "82",
+          "isMTLS": "100"
+        }
+      },
+      {
+        "data": {
+          "id": "ca26577d718e875b222f9b924f5b2293",
+          "source": "6e12196cc2a4951d3e9d72bd6ef7a7e7",
+          "target": "49cf51e18422421eed42c122d7d303f0",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "1.11"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "spin-redis.spinnaker.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "3fc999f50e50855711348a570d8021e6",
+          "source": "6e12196cc2a4951d3e9d72bd6ef7a7e7",
+          "target": "d7c639544a7810a8d021b64538e4e435",
+          "traffic": {
+            "protocol": "tcp"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "e532bf4b30bad1a4be46f367d7724dec",
+          "source": "9afcfda32503d19a2baee57d4e14aab0",
+          "target": "441af6fbee77e495893024d72966ac95",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.10",
+              "httpPercentReq": "93.3"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "spin-clouddriver.spinnaker.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          },
+          "responseTime": "24",
+          "isMTLS": "100"
+        }
+      },
+      {
+        "data": {
+          "id": "17d1be77cc6c4d419a396409c43dd432",
+          "source": "9afcfda32503d19a2baee57d4e14aab0",
+          "target": "49cf51e18422421eed42c122d7d303f0",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "7.19"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "spin-redis.spinnaker.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "e09c765b38c8bc8a368a45d6c0b5ab71",
+          "source": "9afcfda32503d19a2baee57d4e14aab0",
+          "target": "681734c02ea1478615d7a657a5a68bed",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.007",
+              "httpPercentReq": "6.7"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "spin-echo.spinnaker.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          },
+          "responseTime": "22",
+          "isMTLS": "100"
+        }
+      },
+      {
+        "data": {
+          "id": "46fa0169a18e7f6c35e6dedf049cf55a",
+          "source": "9afcfda32503d19a2baee57d4e14aab0",
+          "target": "d7c639544a7810a8d021b64538e4e435",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "21.93"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "unknown": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "1846b21c026319cc09fe4eabbeb235bc",
+          "source": "b30b0078325bf2e1adb4d57c4c0c2665",
+          "target": "61949c8f3b174a291834ff7135729050",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.002",
+              "httpPercentReq": "1.9"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "spin-deck.spinnaker.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          },
+          "responseTime": "5"
+        }
+      },
+      {
+        "data": {
+          "id": "17c8eff54f38a18ca8dca6db161dbfee",
+          "source": "b30b0078325bf2e1adb4d57c4c0c2665",
+          "target": "61949c8f3b174a291834ff7135729050",
+          "traffic": {
+            "protocol": "tcp"
+          },
+          "responseTime": "5"
+        }
+      },
+      {
+        "data": {
+          "id": "4189ff1038fe8a27adfacd01527d5897",
+          "source": "b30b0078325bf2e1adb4d57c4c0c2665",
+          "target": "67cc4ad635f8c1c1d3fb5d096c2887da",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "78340.32"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "spin-redis.spinnaker.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          },
+          "isMTLS": "100"
+        }
+      },
+      {
+        "data": {
+          "id": "30aec4e0633a464f06fc0094991b2534",
+          "source": "b30b0078325bf2e1adb4d57c4c0c2665",
+          "target": "b8512c9cdb9757a1af5558b7785ba679",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.10",
+              "http4xx": "0.007",
+              "httpPercentErr": "6.9",
+              "httpPercentReq": "98.1"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "91.1"
+                },
+                "hosts": {
+                  "spin-gate.spinnaker.svc.cluster.local": "91.1"
+                }
+              },
+              "202": {
+                "flags": {
+                  "-": "2.0"
+                },
+                "hosts": {
+                  "spin-gate.spinnaker.svc.cluster.local": "2.0"
+                }
+              },
+              "404": {
+                "flags": {
+                  "-": "6.9"
+                },
+                "hosts": {
+                  "spin-gate.spinnaker.svc.cluster.local": "6.9"
+                }
+              }
+            }
+          },
+          "responseTime": "216"
+        }
+      },
+      {
+        "data": {
+          "id": "b6451144a13951c0f09eca80e78a7d4e",
+          "source": "b30b0078325bf2e1adb4d57c4c0c2665",
+          "target": "b8512c9cdb9757a1af5558b7785ba679",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "27.36"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "spin-gate.spinnaker.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          },
+          "responseTime": "216"
+        }
+      },
+      {
+        "data": {
+          "id": "ead918a742a611a6bacd5dd0c1870933",
+          "source": "b8512c9cdb9757a1af5558b7785ba679",
+          "target": "303e2a9382b5b881cb38b7186a001296",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.05",
+              "http4xx": "0.003",
+              "httpPercentErr": "5.6",
+              "httpPercentReq": "10.0"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "94.4"
+                },
+                "hosts": {
+                  "spin-orca.spinnaker.svc.cluster.local": "94.4"
+                }
+              },
+              "404": {
+                "flags": {
+                  "-": "5.6"
+                },
+                "hosts": {
+                  "spin-orca.spinnaker.svc.cluster.local": "5.6"
+                }
+              }
+            }
+          },
+          "responseTime": "138",
+          "isMTLS": "100"
+        }
+      },
+      {
+        "data": {
+          "id": "876d52ad93c07a64703027adc1386354",
+          "source": "b8512c9cdb9757a1af5558b7785ba679",
+          "target": "441af6fbee77e495893024d72966ac95",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.27",
+              "http4xx": "0.003",
+              "httpPercentErr": "1.1",
+              "httpPercentReq": "49.3"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "98.9"
+                },
+                "hosts": {
+                  "spin-clouddriver.spinnaker.svc.cluster.local": "98.9"
+                }
+              },
+              "404": {
+                "flags": {
+                  "-": "1.1"
+                },
+                "hosts": {
+                  "spin-clouddriver.spinnaker.svc.cluster.local": "1.1"
+                }
+              }
+            }
+          },
+          "responseTime": "462",
+          "isMTLS": "100"
+        }
+      },
+      {
+        "data": {
+          "id": "95c25cd3f3b88550f70d3ae8e4fb3daa",
+          "source": "b8512c9cdb9757a1af5558b7785ba679",
+          "target": "49cf51e18422421eed42c122d7d303f0",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "1568.29"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "spin-redis.spinnaker.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "83e2e943bf204d36a9bd29ce21c27d62",
+          "source": "b8512c9cdb9757a1af5558b7785ba679",
+          "target": "5bed29f681ec20f337dd2183b6d070c0",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.005",
+              "httpPercentReq": "0.9"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "spin-kayenta.spinnaker.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          },
+          "responseTime": "24",
+          "isMTLS": "100"
+        }
+      },
+      {
+        "data": {
+          "id": "962c71c8c9e891e10e1cabb1e5a7efb8",
+          "source": "b8512c9cdb9757a1af5558b7785ba679",
+          "target": "681734c02ea1478615d7a657a5a68bed",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.002",
+              "httpPercentReq": "0.4"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "spin-echo.spinnaker.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          },
+          "responseTime": "24",
+          "isMTLS": "100"
+        }
+      },
+      {
+        "data": {
+          "id": "9c7e2b76cd284e12b69126a1b4be61d4",
+          "source": "b8512c9cdb9757a1af5558b7785ba679",
+          "target": "6e12196cc2a4951d3e9d72bd6ef7a7e7",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "3bec29b3e030c8fad3e19e93f5e3efd1",
+          "source": "b8512c9cdb9757a1af5558b7785ba679",
+          "target": "9afcfda32503d19a2baee57d4e14aab0",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "00d16e92296f87dabd6421224c54c835",
+          "source": "b8512c9cdb9757a1af5558b7785ba679",
+          "target": "da3c730f443d9b6dff1072e0707ef588",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.21",
+              "httpPercentReq": "39.4"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "spin-front50.spinnaker.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          },
+          "responseTime": "69",
+          "isMTLS": "100"
+        }
+      },
+      {
+        "data": {
+          "id": "b5a9a3dcc5424833578458947d858024",
+          "source": "b8512c9cdb9757a1af5558b7785ba679",
+          "target": "ff4f99bf92c3ac372e9abe541f2ac2d6",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "74d51b3ed1d7a78c862a4fa00fffdcfa",
+          "source": "da3c730f443d9b6dff1072e0707ef588",
+          "target": "d7c639544a7810a8d021b64538e4e435",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "1483.08"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "unknown": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "2010a41864387945147d98a9dceb199b",
+          "source": "da3c730f443d9b6dff1072e0707ef588",
+          "target": "ff4f99bf92c3ac372e9abe541f2ac2d6",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.007",
+              "httpPercentReq": "100.0"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "spin-fiat.spinnaker.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          },
+          "responseTime": "22",
+          "isMTLS": "100"
+        }
+      },
+      {
+        "data": {
+          "id": "83afa9e916d9830503e17cac35cc39d7",
+          "source": "ff4f99bf92c3ac372e9abe541f2ac2d6",
+          "target": "441af6fbee77e495893024d72966ac95",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.07",
+              "httpPercentReq": "48.6"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "spin-clouddriver.spinnaker.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          },
+          "responseTime": "875",
+          "isMTLS": "100"
+        }
+      },
+      {
+        "data": {
+          "id": "6010d6b90a99941135c7eed28147d572",
+          "source": "ff4f99bf92c3ac372e9abe541f2ac2d6",
+          "target": "49cf51e18422421eed42c122d7d303f0",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "231.18"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "spin-redis.spinnaker.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "dc8b81e04a22df0fe9a9cfcc48040c09",
+          "source": "ff4f99bf92c3ac372e9abe541f2ac2d6",
+          "target": "da3c730f443d9b6dff1072e0707ef588",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.07",
+              "httpPercentReq": "51.4"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "spin-front50.spinnaker.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          },
+          "responseTime": "100",
+          "isMTLS": "100"
+        }
+      }
+    ]
+  }
+}

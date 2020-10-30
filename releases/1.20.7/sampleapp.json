@@ -1,0 +1,18 @@
+{
+ "accounts": "my-k8s-account",
+ "cloudProviders": "kubernetes",
+ "dataSources": {
+  "disabled": [],
+  "enabled": [
+   "canaryConfigs"
+  ]
+ },
+ "email": "example@example.com",
+ "instancePort": 80,
+ "lastModifiedBy": "anonymous",
+ "name": "sampleapp",
+ "trafficGuards": [],
+ "updateTs": "1600972537794",
+ "user": "[anonymous]"
+}
+

@@ -1,0 +1,11 @@
+{
+ "cloudProviders": "",
+ "email": "jenk@test.com",
+ "instancePort": 80,
+ "lastModifiedBy": "anonymous",
+ "name": "jenkinsintegration",
+ "trafficGuards": [],
+ "updateTs": "1601321321388",
+ "user": "[anonymous]"
+}
+

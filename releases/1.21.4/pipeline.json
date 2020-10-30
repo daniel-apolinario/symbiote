@@ -1,0 +1,76 @@
+{
+  "application": "app-test",
+  "index": 0,
+  "keepWaitingPipelines": false,
+  "lastModifiedBy": "anonymous",
+  "limitConcurrent": true,
+  "name": "Pipeline Test",
+  "spelEvaluator": "v4",
+  "stages": [
+   {
+    "expectedArtifacts": [
+     {
+      "defaultArtifact": {
+       "customKind": true,
+       "id": "c6103a5f-d671-4ffb-852d-6a035b18172d"
+      },
+      "displayName": "happy-cow-2",
+      "id": "11da6a5c-cf12-443e-8b3e-8a624abb0e62",
+      "matchArtifact": {
+       "artifactAccount": "embedded-artifact",
+       "customKind": false,
+       "id": "ee8f6d2f-c885-480f-a6e3-a75823ffd482",
+       "name": "bake-test",
+       "type": "embedded/base64"
+      },
+      "useDefaultArtifact": false,
+      "usePriorArtifact": false
+     }
+    ],
+    "inputArtifacts": [
+     {
+      "account": "",
+      "id": ""
+     }
+    ],
+    "name": "Bake",
+    "outputName": "bake-test",
+    "overrides": {},
+    "refId": "1",
+    "requisiteStageRefIds": [],
+    "templateRenderer": "HELM2",
+    "type": "bakeManifest"
+   },
+   {
+    "account": "my-k8s-account",
+    "cloudProvider": "kubernetes",
+    "moniker": {
+     "app": "app-test"
+    },
+    "name": "Deploy",
+    "refId": "2",
+    "requisiteStageRefIds": [
+     "1"
+    ],
+    "skipExpressionEvaluation": false,
+    "source": "text",
+    "trafficManagement": {
+     "enabled": false,
+     "options": {
+      "enableTraffic": false,
+      "services": []
+     }
+    },
+    "type": "deployManifest"
+   }
+  ],
+  "triggers": [
+   {
+    "enabled": true,
+    "source": "apptrigger",
+    "type": "webhook"
+   }
+  ],
+  "updateTs": "1598639969000"
+ }
+

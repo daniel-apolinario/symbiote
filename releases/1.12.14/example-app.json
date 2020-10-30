@@ -1,0 +1,12 @@
+{
+ "cloudProviders": "",
+ "email": "ex@example.com",
+ "instancePort": 80,
+ "lastModifiedBy": "anonymous",
+ "name": "example",
+ "platformHealthOnly": true,
+ "trafficGuards": [],
+ "updateTs": "1601295006749",
+ "user": "[anonymous]"
+}
+

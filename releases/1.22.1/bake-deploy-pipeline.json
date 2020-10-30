@@ -1,0 +1,102 @@
+{
+ "application": "example",
+ "index": 0,
+ "keepWaitingPipelines": false,
+ "lastModifiedBy": "anonymous",
+ "limitConcurrent": true,
+ "name": "Bake \u0026 Deploy to Test",
+ "spelEvaluator": "v4",
+ "stages": [
+  {
+   "baseLabel": "release",
+   "baseOs": "bionic",
+   "cloudProvider": "gce",
+   "cloudProviderType": "gce",
+   "extendedAttributes": {},
+   "name": "Bake",
+   "package": "redis-server",
+   "refId": "1",
+   "region": "global",
+   "requisiteStageRefIds": [],
+   "type": "bake",
+   "user": "[anonymous]"
+  },
+  {
+   "clusters": [
+    {
+     "account": "my-gce-account",
+     "application": "example",
+     "associatePublicIpAddress": true,
+     "authScopes": [
+      "cloud.useraccounts.readonly",
+      "devstorage.read_only",
+      "logging.write",
+      "monitoring.write"
+     ],
+     "automaticRestart": true,
+     "availabilityZones": {
+      "us-central1": [
+       "us-central1-c"
+      ]
+     },
+     "backendServiceMetadata": [],
+     "canIpForward": false,
+     "capacity": {
+      "desired": 2,
+      "max": 2,
+      "min": 2
+     },
+     "cloudProvider": "gce",
+     "disableTraffic": false,
+     "disks": [
+      {
+       "sizeGb": 10,
+       "type": "pd-standard"
+      }
+     ],
+     "distributionPolicy": {
+      "zones": []
+     },
+     "enableIntegrityMonitoring": false,
+     "enableSecureBoot": false,
+     "enableVtpm": false,
+     "imageSource": "priorStage",
+     "instanceMetadata": {
+      "load-balancer-names": "example-test"
+     },
+     "instanceType": "f1-micro",
+     "labels": {},
+     "loadBalancers": [
+      "example-test"
+     ],
+     "minCpuPlatform": "",
+     "network": "default",
+     "onHostMaintenance": "MIGRATE",
+     "preemptible": false,
+     "provider": "gce",
+     "region": "us-central1",
+     "regional": false,
+     "selectZones": false,
+     "serviceAccountEmail": "default",
+     "stack": "test",
+     "strategy": "",
+     "subnet": "",
+     "tags": [
+      "example-firewall-test-1601295299030"
+     ],
+     "targetSize": 2,
+     "zone": "us-central1-c"
+    }
+   ],
+   "name": "Deploy",
+   "refId": "2",
+   "requisiteStageRefIds": [
+    "1"
+   ],
+   "type": "deploy"
+  }
+ ],
+ "triggers": [],
+ "updateTs": "1601300873266"
+}
+

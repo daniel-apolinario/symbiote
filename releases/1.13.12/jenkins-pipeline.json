@@ -1,0 +1,20 @@
+{
+ "application": "jenkinsintegration",
+ "index": 0,
+ "keepWaitingPipelines": false,
+ "lastModifiedBy": "anonymous",
+ "limitConcurrent": true,
+ "name": "jenkins-pipeline",
+ "spelEvaluator": "v4",
+ "stages": [],
+ "triggers": [
+  {
+   "enabled": true,
+   "job": "HelloWorld",
+   "master": "my-jenkins-master",
+   "type": "jenkins"
+  }
+ ],
+ "updateTs": "1601353500072"
+}
+

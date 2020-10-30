@@ -1,0 +1,44 @@
+{
+ "applications": [
+  "sampleapp"
+ ],
+ "classifier": {
+  "groupWeights": {
+   "Group 1": 100
+  }
+ },
+ "configVersion": "1",
+ "createdTimestamp": 1601060387254,
+ "createdTimestampIso": "2020-09-25T18:59:47.254Z",
+ "description": "",
+ "id": "f257005d-0071-4af0-97da-e57226d83683",
+ "judge": {
+  "judgeConfigurations": {},
+  "name": "NetflixACAJudge-v1.0"
+ },
+ "metrics": [
+  {
+   "analysisConfigurations": {
+    "canary": {
+     "direction": "increase"
+    }
+   },
+   "groups": [
+    "Group 1"
+   ],
+   "name": "kayenta-metric",
+   "query": {
+    "metricType": "kubernetes.io/container/cpu/request_utilization",
+    "perSeriesAligner": "ALIGN_RATE",
+    "resourceType": "k8s_container",
+    "serviceType": "stackdriver",
+    "type": "stackdriver"
+   },
+   "scopeName": "default"
+  }
+ ],
+ "name": "kayenta-test",
+ "templates": {},
+ "updatedTimestamp": 1601060448167,
+ "updatedTimestampIso": "2020-09-25T19:00:48.167Z"
+}

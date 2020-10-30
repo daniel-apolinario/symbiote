@@ -1,0 +1,24 @@
+{
+  "config": {
+   "applications": [
+    "app-test"
+   ],
+   "clusters": [
+    {
+     "account": "my-k8s-account",
+     "applications": null,
+     "detail": "*",
+     "stack": "*"
+    }
+   ],
+   "pipelineConfigs": [
+    {
+     "application": "app-test",
+     "pipelineConfigId": "b5d2a4ec-9818-478e-b520-129cf37446db"
+    }
+   ]
+  },
+  "email": "drfapolinario@gmail.com",
+  "name": "PROJETO TEST 2",
+ }
+
