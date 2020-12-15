@@ -1,8 +1,8 @@
 strict digraph G {
-  deck [ label="Deck", style="filled", fillcolor="darkolivegreen3" ]; 
-  apicaller [ label="Custom Script/API Caller", style="filled", fillcolor="darkolivegreen3" ]; 
-  halyardcli [ label="Halyard CLI", style="filled", fillcolor="darkgoldenrod1" ];
-  halyarddaemon [ label="Halyard Daemon", style="filled", fillcolor="darkgoldenrod1" ];
+  deck [ label="Deck", style="filled,rounded", fillcolor="darkolivegreen3", shape="box" ]; 
+  apicaller [ label="Custom Script/API Caller", style="filled, rounded", fillcolor="darkolivegreen3", shape="box" ]; 
+  halyardcli [ label="Halyard CLI", style="filled, rounded", fillcolor="darkgoldenrod1", shape="box" ];
+  halyarddaemon [ label="Halyard Daemon", style="filled, rounded", fillcolor="darkgoldenrod1", shape="box" ];
   clouddriver [ label="clouddriver", style="filled", fillcolor="azure2" ];
   echo [ label="echo", style="filled", fillcolor="azure2" ];
   fiat [ label="fiat", style="filled", fillcolor="azure2" ];
@@ -26,16 +26,11 @@ strict digraph G {
   orca -> clouddriver;
   orca -> front50;
   orca -> rosco;
-  orca -> igor;
-  orca -> echo;
   orca -> fiat;
   orca -> kayenta;
-  clouddriver -> front50;
   clouddriver -> fiat;  
   front50 -> fiat;
-  igor -> clouddriver;
   igor -> echo;
   echo -> orca;
   echo -> front50;
-  echo -> fiat;
 }
