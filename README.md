@@ -20,16 +20,9 @@ Initially, we installed on a local machine (laptop). However, hardware configura
 
 ![Spinnaker Deployment Environment](Spinnaker-Environment.png) 
 
-\begin{figure}[!t]
-    \centering
-    \includegraphics[width=16cm,keepaspectratio]{images/Spinnaker-Environment.png}
-\caption{Spinnaker deployment environment overview}
-\label{fig:spinnakerDeployment}
-\end{figure}
+Although there are several ways to install Spinnaker, such as using Helm charts, the Spinnaker documentation strongly recommends using the Halyard tool for any type of deployment. Halyard is a command-line tool developed in Java that is responsible for Spinnaker's configuration and deployment activities. Halyard can be installed in a local machine, VM, or in a Docker container. When deploying to apply the SYMBIOTE method, we chose to install Halyard on a VM created on the GCP. 
 
-Although there are several ways to install Spinnaker, such as using Helm charts, the Spinnaker documentation strongly recommends using the Halyard tool for any type of deployment. Halyard is a command-line tool developed in Java that is responsible for Spinnaker's configuration and deployment activities. Halyard can be installed in a local machine, VM, or in a Docker container. When deploying to apply the SYMBIOTE method, we chose to install Halyard on a VM (Figure~\ref{fig:spinnakerDeployment}) created on the GCP. 
-
-In addition to the VM in Google Compute Engine (GCE), we are using Google Identity and Access Management (IAM) users, roles and permissions, and Google Compute Storage (GCS) for Spinnaker to create and manage buckets. We also used the Google Kubernetes Engine (GKE) to create the cluster on which we installed Spinnaker, Istio, and Kiali. The VM accesses GKE through the \textit{kubectl} tool.
+In addition to the VM in Google Compute Engine (GCE), we are using Google Identity and Access Management (IAM) users, roles and permissions, and Google Compute Storage (GCS) for Spinnaker to create and manage buckets. We also used the Google Kubernetes Engine (GKE) to create the cluster on which we installed Spinnaker, Istio, and Kiali. The VM accesses GKE through the *kubectl* tool.
 
 ## Configuration
 
@@ -41,12 +34,12 @@ To configure the basic deployment of a version of Spinnaker, several steps are n
 * Based on the settings, the Halyard automatically deploys Spinnaker.
 
 
-To perform the integration tests (Section~\ref{sec:integrationTests}), essential to capture all dependencies at run time, we need additional configurations:
+To perform the integration tests, it is essential to capture all dependencies at run time, we need additional configurations:
 * Authentication and authorization: Spinnaker allows using authentication methods via OAuth2 and existing authorization providers. We use GitHub for both authentication and authorization.
 * Integration with Jenkins: we installed an instance of Jenkins on the Kubernetes cluster at GKE to test the automatic triggering of pipelines in Spinnaker from the results of jobs in Jenkins.
 * Enable the Spinnaker Canary Analysis feature. Also, we enable Google Cloud Monitoring and configure Spinnaker to integrate with Google's StackDriver metrics.
-* Configure Deck and Gate services for external access to the GCP network. We changed the type of these services to be \emph{LoadBalancer}.
-* We installed the Spin CLI tool\footnote{\url{https://spinnaker.io/guides/spin/}} to automate the execution of test scenarios. As we deployed several versions, we can optimize the time to run tests using this tool.
+* Configure Deck and Gate services for external access to the GCP network. We changed the type of these services to be *LoadBalancer*.
+* We installed the [Spin CLI tool](https://spinnaker.io/guides/spin/) to automate the execution of test scenarios. As we deployed several versions, we can optimize the time to run tests using this tool.
 
 ## Integration Tests
 
