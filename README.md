@@ -14,7 +14,7 @@ Below is a brief summary of the contents of the repository folders:
 
 Setting up an environment to deploy Spinnaker requires performing a series of tasks. There are different deployment ways and the first step is to understand them all to decide which path to follow. 
 
-Initially, we installed on a local machine (laptop). However, hardware configurations did not meet application requirements properly, causing slowness and temporary errors related to the lack of resources. Therefore, we deployed it on the Google Cloud Platform (GCP), as in Figure [1](#spinnaker-deployment-environment-overview). We installed Spinnaker in its distributed mode, which is the recommended mode for deployments in production. This environment followed the model proposed in the Spinnaker documentation\footnote{\url{https://spinnaker.io/setup/quickstart/halyard-gke/}}.
+Initially, we installed on a local machine (laptop). However, hardware configurations did not meet application requirements properly, causing slowness and temporary errors related to the lack of resources. Therefore, we deployed it on the Google Cloud Platform (GCP), as in Figure [below](#spinnaker-deployment-environment-overview). We installed Spinnaker in its distributed mode, which is the recommended mode for deployments in production. This environment followed the model proposed in the [Spinnaker documentation](https://spinnaker.io/setup/quickstart/halyard-gke/).
 
 ##### Spinnaker deployment environment overview
 
